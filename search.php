@@ -22,7 +22,7 @@ foreach ($data as $row => $extension) {
       $subtitle = $value;
       break;
     case "workflow-screenshot":
-      $icon = $value;
+      $icon = 'icon.png';
       break;
     }
   }
