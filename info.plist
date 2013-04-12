@@ -16,12 +16,31 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C705157F-8432-4042-8D2E-25FDF783E3CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>49AF1A77-FD55-45AF-9CA5-0FD0DEC47E26</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A36A83E1-313F-4652-AA3C-5276462B453B</string>
+				<string>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>C705157F-8432-4042-8D2E-25FDF783E3CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CDCEF74B-C076-45A3-95BC-7D903F93747C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -54,11 +73,51 @@
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
+				<key>title</key>
+				<string>Extension Manager</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>A36A83E1-313F-4652-AA3C-5276462B453B</string>
+			<string>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Installing {query}</string>
+				<key>title</key>
+				<string>Extension Manager</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>CDCEF74B-C076-45A3-95BC-7D903F93747C</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>php -r '$data = json_decode($argv[1], true); echo $data["title"];' -- "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C705157F-8432-4042-8D2E-25FDF783E3CA</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -117,10 +176,20 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>A36A83E1-313F-4652-AA3C-5276462B453B</key>
+		<key>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>C705157F-8432-4042-8D2E-25FDF783E3CA</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>CDCEF74B-C076-45A3-95BC-7D903F93747C</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
