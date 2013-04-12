@@ -7,7 +7,7 @@ $query = $argv[1];
 $data = json_decode($query, true);
 
 $download_link  = $data['download-link'];
-$file_name      = "/tmp/extension.alfredworkflow";
+$file_name      = "/tmp/workflow.alfredworkflow";
 
 $file_data = @file_get_contents($download_link);
 
@@ -22,6 +22,6 @@ if ($file_data) {
     echo "Download failed.";
   }
 } else {
-  echo "Extension temporarily unavailable";
+  echo "Workflow temporarily unavailable";
 }
 

@@ -38,4 +38,8 @@ foreach ($data as $row => $extension) {
   }
 }
 
+if (!$w->results()) {
+  $w->result( 'nothingfound', 'none', 'Workflows', 'No workflows found', 'hat.png', 'no' );
+}
+
 echo $w->toxml();
