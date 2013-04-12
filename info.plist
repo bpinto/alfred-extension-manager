@@ -29,7 +29,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</string>
+				<string>EF8F4E62-5EA6-40C4-9EF2-38AF85CAB6B4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -72,30 +72,7 @@
 				<key>sticky</key>
 				<false/>
 				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Extension Manager</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>Installing {query}</string>
+				<string>Installing...</string>
 				<key>title</key>
 				<string>Extension Manager</string>
 			</dict>
@@ -103,6 +80,29 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>CDCEF74B-C076-45A3-95BC-7D903F93747C</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Extension Installer</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>EF8F4E62-5EA6-40C4-9EF2-38AF85CAB6B4</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -176,11 +176,6 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>8CEFECC0-142E-4FE5-B26A-DB44EEF67937</key>
-		<dict>
-			<key>ypos</key>
-			<real>10</real>
-		</dict>
 		<key>C705157F-8432-4042-8D2E-25FDF783E3CA</key>
 		<dict>
 			<key>ypos</key>
@@ -190,6 +185,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>EF8F4E62-5EA6-40C4-9EF2-38AF85CAB6B4</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
