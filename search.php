@@ -12,7 +12,7 @@ foreach ($data as $row => $extension) {
   foreach ($extension as $rel => $value) {
     switch ($rel) {
     case "workflow-download-link":
-      $arg = $value;
+      $link = $value;
       break;
     case "workflow-name":
       $title = $value;
@@ -28,7 +28,13 @@ foreach ($data as $row => $extension) {
   }
 
   if (!(stripos($title, $query) === false)) {
-    $w->result($uid, $arg, $title, $subtitle, $icon);
+    $json_array = array(
+      "download-link" => $link,
+      "title"         => $title
+    );
+    $json = json_encode($json_array);
+
+    $w->result($uid, $json, $title, $subtitle, $icon);
   }
 }
 
