@@ -18,6 +18,15 @@ if ($file_data) {
   $downloaded = @file_put_contents($file_name, $file_data);
   if($downloaded > 0) {
     exec('open '. $file_name, $extract);
+
+    if($extract > 0) {
+      $title = str_replace(' ', '_', $data['title']);
+      $title = strtolower($title);
+
+      $w->set($title, $data['version'], 'settings.plist');
+    } else {
+      echo "Installation failed.";
+    }
   } else {
     echo "Download failed.";
   }

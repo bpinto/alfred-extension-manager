@@ -24,13 +24,17 @@ foreach ($data as $row => $extension) {
     case "workflow-screenshot":
       $icon = 'icon.png';
       break;
+    case "workflow-version":
+      $version = $value;
+      break;
     }
   }
 
   if (!(stripos($title, $query) === false)) {
     $json_array = array(
       "download-link" => $link,
-      "title"         => $title
+      "title"         => $title,
+      "version"       => $version
     );
     $json = json_encode($json_array);
 
